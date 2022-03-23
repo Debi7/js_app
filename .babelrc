@@ -1,0 +1,18 @@
+// конфигурационный файл для babel
+
+//указываем в формате json конфигурацию:
+{
+  "presets": [
+    //объект presets - это массив
+    // "@babel/preset-typescript",
+    // "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": [
+          "last 5 versions" //указываем тут настройки для bable: хотим поддерживать последние 5 версий браузера
+        ]
+      }
+    ]
+  ]
+}
